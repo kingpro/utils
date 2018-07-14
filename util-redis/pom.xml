@@ -17,12 +17,20 @@
         <artifactId>util-parent</artifactId>
         <version>0.0.1</version>
     </parent>
+    <properties>
+        <yexuejc.base.version>1.1.6</yexuejc.base.version>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.yexuejc.util</groupId>
             <artifactId>util-base</artifactId>
             <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yexuejc.base</groupId>
+            <artifactId>yexuejc-base</artifactId>
+            <version>${yexuejc.base.version}</version>
         </dependency>
         <!--使用热部署-->
         <dependency>
@@ -57,7 +65,42 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
-
+        <!-- 使用阿里云短信服务SMS6 -->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+        </dependency>
+        <!-- 阿里云基础SDK -->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+        </dependency>
+        <!-- 阿里云STS相关SDK -->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-sts</artifactId>
+        </dependency>
+        <!-- 使用阿里云消息服务MNS -->
+        <dependency>
+            <groupId>com.aliyun.mns</groupId>
+            <artifactId>aliyun-sdk-mns</artifactId>
+            <classifier>jar-with-dependencies</classifier>
+        </dependency>
+        <!-- 阿里云推送相关 -->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-push</artifactId>
+        </dependency>
+        <!-- 支付宝支付SDK -->
+        <dependency>
+            <groupId>com.alipay</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+        </dependency>
+        <!-- 微信支付SDK -->
+        <dependency>
+            <groupId>com.github.wxpay</groupId>
+            <artifactId>WXPay-SDK-Java</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
