@@ -1,0 +1,7 @@
+version: '3.1'
+
+services:
+  tomcat:
+    image: tomcat:7.0.81-jre8
+    ports:
+      - "8088:8080"
